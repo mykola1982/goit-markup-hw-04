@@ -46,9 +46,9 @@ button {
   cursor: pointer;
 }
 
- img {
+img {
   display: block;
-}  
+}
 
 /*-----------стоворюємо контейнер------------------*/
 .container {
@@ -153,6 +153,7 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--brand-color);
@@ -163,6 +164,18 @@ button {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
+  max-width: 1600px;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url("../images/photo_hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
 }
 
 /*переводить текст заголовка героя в верхній регістр*/
@@ -304,6 +317,62 @@ button {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.team-soc-list {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+
+.team-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+
+
+}
+
+.team-soc-item:last-child {
+  margin-right: 0;
+}
+
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AFB1B8;
+
+}
+
+.team-soc-icom {
+  fill: currentColor;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #2196f3;
+  color: #FFFFFF;
+}
+
+
+
+
+/* універсальний спосіб для дітей від батька та сусідів */
+/* .team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #2196f3;
+}
+
+.team-soc-link:hover .team-soc-icom,
+.team-soc-link:focus .team-soc-icom {
+  fill: #FFFFFF;
+} */
+
 
 
 /*cтилізація футера*/
