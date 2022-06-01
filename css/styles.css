@@ -8,7 +8,6 @@
 /*колір фону секціі команда  #F5F4FA;*/
 /*колір номери і телефону в футері rgba(255, 255, 255, 0.6);*/
 
-
 /*приховування заголовка секції наши преимущества*/
 .visually-hidden {
   position: absolute;
@@ -24,7 +23,6 @@
 }
 
 /*-----Обнуляємо стилі глобально. RESET------------*/
-
 
 p,
 h1,
@@ -61,7 +59,6 @@ img {
 
 /*-----------призначення змінної-------------------*/
 
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -71,7 +68,7 @@ img {
 /*стилізація всього документу*/
 .page {
   color: var(--primary-text-color);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
@@ -81,18 +78,16 @@ img {
   list-style: none;
 }
 
-/*----------- стилізація heade------------------*/
+/*----------- стилізація header------------------*/
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
-
 
 /*стилізація логотипу*/
 .logo {
-  color:
-    var(--brand-color);
+  color: var(--brand-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -120,8 +115,7 @@ img {
   margin-left: auto;
 }
 
-.site-nav-item:not(:last-child),
-.contact-nav-item:not(:last-child) {
+.site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -152,6 +146,23 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.contact-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contact-nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  display: block;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .contact-nav .link:hover,
@@ -167,15 +178,11 @@ img {
   margin: 0 auto;
   max-width: 1600px;
 
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    url("../images/photo_hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/photo_hero.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-
-
 }
 
 /*переводить текст заголовка героя в верхній регістр*/
@@ -190,8 +197,6 @@ img {
 
   max-width: 696px;
   margin: 0 auto 30px;
-
-
 }
 
 /*стилізація кнопки героя*/
@@ -201,7 +206,7 @@ img {
   display: block;
   margin: 0 auto;
 
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: var(--brand-color);
   font-family: inherit;
   font-weight: 700;
@@ -211,7 +216,6 @@ img {
   border: 1px solid var(--brand-color);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
 
 /*стилізація секцій   якійсь брєд не розібрався з94 */
@@ -245,7 +249,6 @@ img {
   margin-left: 30px;
 }
 
-
 .feature-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -258,6 +261,17 @@ img {
 .feature-list .text {
   font-size: 14px;
   line-height: 1.72;
+}
+
+.feature-thumb {
+  width: 100%;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 /*стилізація секції чим ми займаємося*/
@@ -276,11 +290,9 @@ img {
   margin-left: 30px;
 }
 
-
 /*стилізація секції наша команда*/
 .section-team {
-  background-color: #F5F4FA;
-
+  background-color: #f5f4fa;
 }
 
 .team-list {
@@ -291,11 +303,11 @@ img {
 .team-list-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  background-color: #FFFFFF;
-
+  background-color: #ffffff;
 }
 
 .team-list .title {
@@ -324,12 +336,10 @@ img {
   justify-content: center;
 }
 
-
 .team-soc-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
-
 }
 
 .team-soc-item:last-child {
@@ -339,13 +349,11 @@ img {
 .team-soc-link {
   width: 100%;
   height: 100%;
-
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #AFB1B8;
-
+  color: #afb1b8;
 }
 
 .team-soc-icom {
@@ -355,11 +363,8 @@ img {
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--brand-color);
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
-
-
 
 /* універсальний спосіб для дітей від батька та сусідів */
 /* .team-soc-link:hover,
@@ -372,7 +377,6 @@ img {
   fill: #FFFFFF;
 } */
 /* ------------стилізація секції постійні клієнти -----------*/
-
 
 .client-list {
   display: flex;
@@ -395,9 +399,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: #AFB1B8;
+  color: #afb1b8;
 }
 
 .client-icon {
@@ -408,23 +412,36 @@ img {
 .client-link:focus {
   color: var(--brand-color);
   border: 1px solid var(--brand-color);
-} 
+}
 
 /*cтилізація футера*/
 .footer {
-  background-color: #2F303A;
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 /*стилизація білої частини логотипу футера */
 .logo-white {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer .logo {
   margin-bottom: 20px;
+  margin-right: 0;
   display: block;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer-contact {
+  margin-right: 70px;
+}
+
+.footer-soc {
+  margin-top: 12px;
 }
 
 /*стилізація контактів футера*/
@@ -441,9 +458,8 @@ img {
   margin-bottom: 9px;
 }
 
-
 .footer-list .link.adress {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-list .link:hover,
@@ -451,7 +467,52 @@ img {
   color: var(--brand-color);
 }
 
-/*стилізація portfolio.html*/
+.footer-soc-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-soc-list {
+  display: flex;
+}
+
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.footer-soc-item:last-child {
+  margin-right: 0;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.footer-soc-icon {
+  fill: currentColor;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--brand-color);
+}
+
+/*----------стилізація portfolio.html-----------*/
 .portfolio-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -462,7 +523,6 @@ img {
 }
 
 /*стилізація кнопок портфоліо*/
-
 
 .portfolio-btn-list {
   display: flex;
@@ -475,7 +535,7 @@ img {
 
 .portfolio-btn {
   color: #212121;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -486,13 +546,14 @@ img {
   padding: 6px 22px;
   border: transparent;
   border-radius: 4px;
-
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -504,9 +565,14 @@ img {
 }
 
 .portfolio-list-item {
-  flex-basis: calc(100%/3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list .text {
@@ -516,6 +582,5 @@ img {
 
 .portfolio-content {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
-  ;
+  border: 1px solid #eeeeee;
 }
