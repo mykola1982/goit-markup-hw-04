@@ -330,7 +330,6 @@ img {
   height: 44px;
   margin-right: 10px;
 
-
 }
 
 .team-soc-item:last-child {
@@ -340,7 +339,7 @@ img {
 .team-soc-link {
   width: 100%;
   height: 100%;
-  background-color: f;
+
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -355,7 +354,7 @@ img {
 
 .team-soc-link:hover,
 .team-soc-link:focus {
-  background-color: #2196f3;
+  background-color: var(--brand-color);
   color: #FFFFFF;
 }
 
@@ -372,8 +371,44 @@ img {
 .team-soc-link:focus .team-soc-icom {
   fill: #FFFFFF;
 } */
+/* ------------стилізація секції постійні клієнти -----------*/
 
 
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+
+.client-item {
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+}
+
+.client-item:last-child {
+  margin-right: 0;
+}
+
+.client-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  color: #AFB1B8;
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--brand-color);
+  border: 1px solid var(--brand-color);
+} 
 
 /*cтилізація футера*/
 .footer {
